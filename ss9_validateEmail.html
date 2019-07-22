@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Email</title>
+</head>
+<body>
+<!--<script src="checkEmail.js"></script>-->
+<script>
+    function isEmail(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            return 'mail hợp lệ';
+        } else {
+            return 'mail không hợp lệ';
+        }
+    }
+
+    let str = prompt('Nhập email kiểm tra');
+    console.log(isEmail(str));
+</script>
+</body>
+</html>
